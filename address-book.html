@@ -1,19 +1,48 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="/css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="/css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-1.12.10.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.12.0.js"></script>
     <script src="js/scripts.js"></script>
-    <title>App Title</title>
+    <title>Address Book</title>
   </head>
   <body>
     <div class="container">
-      <h1>App Title</h1>
+      <h1>Address Book</h1>
 
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Add a Contact:</h2>
+          <form id="new-contact">
+            <div class="form-group">
+              <label for="new-first-name">First Name</label>
+              <input id="new-first-name" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="new-last-name">Last Name</label>
+              <input id="new-last-name" type="text" class="form-control">
+            </div>
 
+            <button type="submit" class="btn btn-success">Add New</button>
+          </form>
 
+          <h2>Contacts:</h2>
+          <ul id="contacts">
 
+          </ul>
+
+        </div>
+
+        <div class="col-md-6">
+          <div id="show-contact">
+            <h3></h3>
+
+            <p>First Name: <span class="first-name"></span></p>
+            <p>Last Name: <span class="last-name"></span></p>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
